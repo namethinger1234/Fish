@@ -1,0 +1,181 @@
+
+
+* {
+  font-family: sans-serif;
+}
+
+div.cover{
+  filter: blur(5px) grayscale(80%);
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  background-image: url(bibba.png);
+  transition-duration: 20s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+div.cover:hover {
+  background: transparent;
+  opacity: 0.2%;
+  filter: none;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  background: #6290C3;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 99%;
+  border-style: outset;
+  border-width: 10px;
+  border-color: #AED1E6;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  background: #AED1E6;
+  overflow-y: scroll;
+  overflow-x: hidden;
+ } 
+
+.button {
+  width : 45%;
+  display: inline-block;
+  text-align: left;
+}
+
+.heading {
+  width: 54%;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.main-ext {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.main {
+  background: #FFF;
+  z-index: 5;
+  margin: auto;
+  position: relative;
+  width: 80%;
+  padding: 0;
+  display: inline-block;
+  border-style: double;
+  border-color: #342A21;
+  border-width: 3px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+footer {
+  background: #342A21;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 2.5%;
+  z-index: 2;
+  display:block;
+  color: #AED1E6;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.main-right {
+  padding: 0.2% 5% 0.2% 5%;
+  display: inline-block;
+  position: relative;
+  background : green;
+  float: right;
+  top: 10%; 
+  right: 5%;
+  z-index: 10;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 10%;
+}
+
+.specials-right {
+  float: right;
+  position: relative;
+  display: ;
+
+}
+
+.main-p {
+  text-align: center;
+}
+
+.main-p img {
+  height: 20%;
+  width: 20%;
+}
+
+
+
+
+/* this is for the sidebar dont mess with it! */
+
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 999; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
